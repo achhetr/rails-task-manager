@@ -3,8 +3,9 @@
 <div class="banner">
   <p><%= @task.details %></p>
 </div>
-<div class="input-container">
+<div class="item-container">
   <input type="checkbox" name="checkbox" <%= "checked" if @task.completed %> >
   <label>This task is not completed</label>
 </div>
+
 <%= link_to 'Back to list', tasks_path %>
