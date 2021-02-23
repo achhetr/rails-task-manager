@@ -1,0 +1,9 @@
+<h1><%= @task.title %> </h1>
+<div class="banner">
+  <p><%= @task.details %></p>
+</div>
+<div class="input-container">
+  <input type="checkbox" name="checkbox" <%= "checked" if @task.completed %> >
+  <label>This task is not completed</label>
+</div>
+<%= link_to 'Back to list', :back %>
